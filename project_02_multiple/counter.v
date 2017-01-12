@@ -15,18 +15,18 @@ wire clk;
 wire rst;
 wire ena;
 
-reg [7:0] out;
+//reg [7:0] out;
 
 always @ (posedge clk)
 begin: counter
 
-  if (rst == 1'b1) begin
-    out <= #1 8'b00000000;
-  end
+//  if (rst == 1'b1) begin
+//    out <= #1 8'b00000000;
+//  end
 
-  else if (ena == 1'b1) begin
+//  else if (ena == 1'b1) begin
     out <= #1 out + 1;
-  end
+//  end
 end
 
 endmodule
