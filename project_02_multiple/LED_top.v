@@ -15,10 +15,10 @@ reg blnk;
   );
 
   counter dat_counter (
-    .clk(clk),
+    .clk(blnk),
     .rst(rst),
     .ena(1'b1),
-    .out(LED[7:0])
+    .out(LED)
   );
 
 endmodule
